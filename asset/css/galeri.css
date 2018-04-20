@@ -1,0 +1,504 @@
+@font-face{
+	src: url('../fonts/OpenSans-Bold.ttf'); 
+	font-family: 'obold';
+}
+
+@font-face{
+	src: url('../fonts/OpenSans-Regular.ttf'); 
+	font-family: 'Open';
+}
+
+@font-face{
+	src: url('../fonts/ProximaNovaSoft-Regular.otf'); 
+	font-family: 'Proxima';
+}
+
+@font-face{
+	src: url('../fonts/ProximaNovaSoft-Medium.otf'); 
+	font-family: 'Proximam';
+}
+
+@font-face{
+	src: url('../fonts/Roboto-Light.ttf'); 
+	font-family: 'Roboto';
+}
+
+@font-face{
+	src: url('../fonts/Roboto-Medium.ttf'); 
+	font-family: 'Robotom';
+}
+
+@font-face{
+	src: url('../fonts/RobotoCondensed-bold.ttf'); 
+	font-family: 'Robotocb';
+}
+
+@font-face{
+	src: url('../fonts/RobotoCondensed-Light.ttf'); 
+	font-family: 'Robotocl';
+}
+
+@font-face{
+	src: url('../fonts/Intro.otf'); 
+	font-family: 'Intro';
+}
+
+*{
+	max-width: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: #FFF;
+	width: 100%;
+	height: 80px;
+	-webkit-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	-moz-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	box-shadow: 7px 18px 50px 2px rgba(225,225,225,0.6);
+	position: fixed;
+	z-index: 99;
+}
+
+.clear{
+	clear: both;
+}
+
+.hamburger{
+    font-size:20px;
+    cursor:pointer;
+    float: left;
+    color: #fff;
+    border: solid 1px transparent;
+    background-color: #00ccff;
+    padding: 25px 30px;
+    margin-left: -20px;
+}
+.f-h2{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: 'proxima';
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ccff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'proxima';
+    font-size: 18px;
+}
+
+.sidenav .imge{
+	position: relative;
+	bottom: 4px;
+	width: 18%;
+	float: left;
+}
+
+.sidenav .active{
+	background: rgba(0, 0, 0, .1);
+}
+
+.sidenav ul{
+	margin: 0;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.sidenav .dropdown-menu{
+	width: 100%;
+	position: relative;
+	background: #00ccff;
+	border: none;
+	box-shadow: none;
+	bottom: 20px;
+}
+
+.sidenav .dropdown-menu a{
+	padding-left: 72px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+	font-family: 'Proximam';
+	font-size: 18px;
+}
+
+.sidenav .dropdown-menu a:hover{
+	background: rgba(0, 0, 0, .1);
+	transition: all .3s ease;
+	color: #FFF;
+}
+
+.sidenav ul li{
+	list-style: none;
+}
+
+.sidenav ul li a{
+	font-family: 'Proximam';
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.sidenav ul li a:hover{
+	background: rgba(0, 0, 0, .1);
+	transition: all .3s ease;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:hover{
+	text-decoration: none;
+}
+
+section{
+	clear: both;
+	width: 100%;
+	height: 100%;
+}
+
+section .title{
+	margin-top: 150px;
+}
+
+section .title h3{
+	font-family: 'obold';
+	text-shadow: 1px 1px #3fbcef;
+	text-align: center;
+	font-size: 28px;
+	color: #191b1c;
+}
+
+section .ket p{
+	font-family: 'Open';
+	font-size: 16px;
+	color: #7e8288;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .image img{
+	width: 100%;
+}
+
+section .image{
+	margin-top: 30px;
+}
+
+section .height{
+	height: 414px;
+}
+
+section .a{
+	height: 416px;
+}
+
+section .b{
+	height: 190px;
+}
+
+section .foto{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+section .image{
+	overflow: auto;
+}
+
+section .image img{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all .5s ease;
+}
+
+section .image:hover .hover{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover .hover2{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover .hover3{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover .hover4{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover .hover5{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover .hover6{
+	transition: all .3s ease;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+section .image:hover img{
+	transition: all .5s ease;
+}
+
+section .image .hover{
+	height: 250px;
+}
+
+section .image .hover2{
+	height: 250px;
+}
+
+section .image .hover3{
+	height: 250px;
+}
+
+section .image .hover{
+	position: absolute;
+	top: 0;
+	right: 0; 
+	left: 0;
+	bottom: 0;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover h4, section .image .hover2 h4, section .image .hover3 h4, section .image .hover6 h4{
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	color: #FFF;
+	margin-top: 60px;
+}
+
+section .image .hover4 h4{
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	color: #FFF;
+	margin-top: 165px;
+}
+
+section .image .hover5 h4{
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 15px;
+	width: 90%;
+	margin: 0 auto;
+	color: #FFF;
+	margin-top: 165px;
+}
+
+section .image .hover2{
+	position: absolute;
+	top: 220px;
+	right: 0; 
+	left: 0;
+	bottom: -50px;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover3{
+	position: absolute;
+	top: 442px;
+	right: 0; 
+	left: 0;
+	bottom: -50px;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover4{
+	position: absolute;
+	top: 250px;
+	right: 0; 
+	left: 0;
+	bottom: -50px;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover5{
+	position: absolute;
+	top: 28px;
+	right: 0; 
+	left: 0;
+	bottom: 0px;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover6{
+	position: absolute;
+	top: 445px;
+	right: 0; 
+	left: 0;
+	bottom: 0px;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+	background: #5595b1;
+}
+
+section .image .hover p, section .image .hover2 p, section .image .hover3 p, section .image .hover4 p, section .image .hover5 p, section .image .hover6 p{
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 12px;
+	color: #FFF;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+section .image .satu{
+	width: 91%;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 191px;
+}
+
+section .image .dua{
+	width: 91%;
+	margin: 0 auto;
+	height: 417px;
+}
+
+section .image .tiga{
+	width: 91%;
+	margin: 0 auto;
+	height: 418px;
+}
+
+footer{
+	clear: both;
+	background-color: #00ccff;
+	width: 100%;
+	height: 60px;
+}
+
+footer .left{
+	float: left;
+	margin-top: 25px;
+}
+
+footer .left img{
+	width: 180px;
+}
+
+footer .right{
+	float: right;
+	margin-top: 20px; 
+}
+
+footer .right span{
+	font-family: 'Proxima';
+	color: #FFF;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+footer .right a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+	font-family: 'Proxima';
+}
+
+.img{
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 768px){
+	.hover, .hover2, .hover3, .hover4, .hover5, .hover6{
+		display: none;
+	}
+
+	.img{
+		margin-right: 0;
+	}
+
+	footer{
+		height: 100px;
+	}
+
+	.left{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.right{
+		clear: both;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		bottom: 10px;
+	}
+}

@@ -1,0 +1,272 @@
+@font-face{
+    src:url('../fonts/ProximaNovaSoft-Medium.otf');
+    font-family: 'Proximam';
+}
+@font-face{
+    src:url('../fonts/Roboto-Bold.ttf');
+    font-family: 'roboto-bold';
+}
+@font-face{
+    src:url('../fonts/Roboto-Light.ttf');
+    font-family: 'Roboto';
+}
+@font-face{
+    src: url('../fonts/OpenSans-Bold.ttf'); 
+    font-family: 'obold';
+}
+@font-face{
+    src: url('../fonts/OpenSans-Regular.ttf'); 
+    font-family: 'Open';
+}
+@font-face{
+    src: url('../fonts/ProximaNovaSoft-Regular.otf'); 
+    font-family: 'Proxima';
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    max-width: 100%;
+}
+header{
+    background: #FFF;
+    width: 100%;
+    height: 80px;
+    -webkit-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+    -moz-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+    box-shadow: 7px 18px 50px 2px rgba(225,225,225,0.6);
+    position: fixed;
+    z-index: 99;
+}
+.clear{
+    clear: both;
+}
+.hamburger{
+    font-size:20px;
+    cursor:pointer;
+    float: left;
+    color: #fff;
+    border: solid 1px transparent;
+    background-color: #00ccff;
+    padding: 25px 30px;
+    margin-left: -20px;
+}
+.f-h2{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: 'proxima';
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ccff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'proxima';
+    font-size: 18px;
+}
+
+.sidenav .imge{
+    position: relative;
+    bottom: 4px;
+    width: 18%;
+    float: left;
+}
+
+.sidenav .active{
+    background: rgba(0, 0, 0, .1);
+}
+
+.sidenav ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.sidenav .dropdown-menu{
+    width: 100%;
+    position: relative;
+    background: #00ccff;
+    border: none;
+    box-shadow: none;
+    bottom: 20px;
+}
+
+.sidenav .dropdown-menu a{
+    padding-left: 72px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFF;
+    font-family: 'Proximam';
+    font-size: 18px;
+}
+
+.sidenav .dropdown-menu a:hover{
+    background: rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+    color: #FFF;
+}
+
+.sidenav ul li{
+    list-style: none;
+}
+
+.sidenav ul li a{
+    font-family: 'Proximam';
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.sidenav ul li a:hover{
+    background: rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:hover{
+    text-decoration: none;
+}
+
+/*Content*/
+.content-1 h1 {
+    font-family: 'obold';
+}
+.content-1 p{
+    font-family: 'Open';
+    font-size: 16px;
+    color: #b7b7b7;
+}
+.content-2 h3, .content-3 h3, .content-4 h3, .content-5 h3, .content-7 h3,
+.content-8 h3, .content-9 h3, .content-10 h3{
+    font-family: 'Proxima';
+    font-size: 23px;
+    color: #00ccff;
+}
+.content-2 p, .content-3 p,
+.content-4 p, .content-5 p, .content-7 p,
+.content-8 p, .content-9 p, .content-10 p{
+    font-family: 'Proxima';
+    font-size: 16px;
+    color: #b7b7b7;
+}
+
+.content-1, .content-2, .content-3, .content-4, .content-5, .content-6, .content-7, .content-8, .content-9, .content-10{
+    margin-top: 50px;
+}
+
+.content-10{
+    margin-bottom: 150px;
+}
+
+.content-6 img{
+    width: 100%;
+    height: 485px;
+}
+
+.content-img img{
+    margin-top: 50px;
+}
+
+section{
+    padding-top: 200px;
+}
+footer{
+    clear: both;
+    background-color: #00ccff;
+    width: 100%;
+    height: 60px;
+}
+
+footer .left{
+    float: left;
+    margin-top: 25px;
+}
+
+footer .left img{
+    width: 180px;
+}
+
+footer .right{
+    float: right;
+    margin-top: 20px; 
+}
+
+footer .right span{
+    font-family: 'Proxima';
+    color: #FFF;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+footer .right a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Proxima';
+}
+
+.img{
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        padding-top: 150px;
+    }
+
+    .img{
+        margin-right: 0;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .left{
+        clear: both;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .right{
+        clear: both;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: 10px;
+    }
+}

@@ -1,0 +1,927 @@
+@font-face{
+	src: url('../fonts/OpenSans-Bold.ttf'); 
+	font-family: 'obold';
+}
+
+@font-face{
+	src: url('../fonts/OpenSans-Regular.ttf'); 
+	font-family: 'Open';
+}
+
+@font-face{
+	src: url('../fonts/ProximaNovaSoft-Regular.otf'); 
+	font-family: 'Proxima';
+}
+
+@font-face{
+	src: url('../fonts/ProximaNovaSoft-Medium.otf'); 
+	font-family: 'Proximam';
+}
+
+@font-face{
+	src: url('../fonts/Roboto-Light.ttf'); 
+	font-family: 'Roboto';
+}
+
+@font-face{
+	src: url('../fonts/Roboto-Medium.ttf'); 
+	font-family: 'Robotom';
+}
+
+@font-face{
+	src: url('../fonts/RobotoCondensed-Bold.ttf'); 
+	font-family: 'Robotocb';
+}
+
+@font-face{
+	src: url('../fonts/RobotoCondensed-Light.ttf'); 
+	font-family: 'Robotocl';
+}
+
+@font-face{
+	src: url('../fonts/Intro.otf'); 
+	font-family: 'Intro';
+}
+
+*{
+	max-width: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+}
+.clear{
+    clear: both;
+}
+header {
+    background-image: url('../img/pict/headerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.header-content{
+	overflow: hidden;
+	position: fixed;
+	transition-duration: 1s;
+	transition: .3s ease;
+	z-index: 1;
+	width: 100%;
+}
+.header-content.change{
+	background-color: #FFF;
+	z-index: 1;
+	-webkit-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	-moz-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	box-shadow: 7px 18px 50px 2px rgba(225,225,225,0.6);
+}
+
+/*--------------*/
+/*---Sidebar----*/
+/*--------------*/
+.hamburger{
+    font-size:20px;
+    cursor:pointer;
+    float: left;
+    color: #fff;
+    border: solid 1px transparent;
+    background-color: #00ccff;
+    padding: 25px 30px;
+    margin-left: -20px;
+    z-index: 99;
+}
+.f-h2{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: 'proxima';
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00ccff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'proxima';
+    font-size: 18px;
+}
+
+.sidenav .imge{
+	position: relative;
+	bottom: 4px;
+	width: 18%;
+	float: left;
+}
+
+.sidenav .active{
+	background: rgba(0, 0, 0, .1);
+}
+
+.sidenav ul{
+	margin: 0;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.sidenav .dropdown-menu{
+	width: 100%;
+	position: relative;
+	background: #00ccff;
+	border: none;
+	box-shadow: none;
+	bottom: 20px;
+}
+
+.sidenav .dropdown-menu a{
+	padding-left: 72px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+	font-family: 'Proximam';
+	font-size: 18px;
+}
+
+.sidenav .dropdown-menu a:hover{
+	background: rgba(0, 0, 0, .1);
+	transition: all .3s ease;
+	color: #FFF;
+}
+
+.sidenav .dd{
+	margin-top: 55px;
+}
+
+.sidenav ul li{
+	list-style: none;
+}
+
+.sidenav ul li a{
+	font-family: 'Proximam';
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.sidenav ul li a:hover{
+	background: rgba(0, 0, 0, .1);
+	transition: all .3s ease;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.buttn{
+	padding-top: 15px;
+}
+
+.button-c{
+    border: solid 1px transparent;
+    background: #39aed8;
+    color: #e5eae7;
+    font-size: 18px;
+    padding: 10px 18px;
+    text-decoration: none;
+}
+
+.button-c:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.button-c:hover{
+	background: transparent;
+	transition: all .3s ease;
+	color: #39aed8;
+	border: solid 1px #39aed8;
+	text-decoration: none;
+}
+
+/* */
+.delapan{
+    width: 90%;
+    margin: 0;
+}
+.br{
+    padding-top: 250px;
+}
+/*LOGO*/
+.logo-u{
+    background-color: #fff;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	-moz-box-shadow: 7px 18px 50px 2px rgba(225,225,225,.0.6);
+	box-shadow: 7px 18px 50px 2px rgba(225,225,225,0.6);
+}
+.logo-uu img {
+    width: 85px;
+    margin: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.logo-uu img:hover{
+    transform: opacity .3s ease;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+section .info .title h3{
+	font-family: 'obold';
+	text-shadow: 1px 1px #3fbcef;
+	text-align: center;
+	font-size: 28px;
+	color: #191b1c;
+}
+
+section .info .ket p{
+	font-family: 'Open';
+	font-size: 16px;
+	color: #7e8288;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .info .row .icon img{
+	width: 191px;
+}
+
+section .info .row .icon-title h3{
+	color: #00ccff;
+	font-family: 'Proxima';
+	font-size: 26px;
+}
+
+section .info .row .icon-content p{
+	font-family: 'Proxima';
+	font-size: 14px;
+	color: #7e7e7e;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .info .row .content-info{
+	margin: 5%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+section .visi-misi{
+	clear: both;
+	background: url('../img/pict/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 660px;
+}
+
+section .visi-misi .visi-title h3{
+	font-family: 'obold';
+	color: #191b1c;
+	font-size: 28px;
+	text-shadow: 1px 1px #3fbcef;
+	margin: 150px 0 130px;
+}
+
+section .visi-misi .visi h4, section .visi-misi .misi h4{
+	float: left;
+	color: #00ccff;
+	font-family: 'Proxima';
+	font-size: 24px;
+}
+
+section .visi-misi .visi h4{
+	width: 20%;
+	height: 50px;
+}
+
+section .visi-misi .misi{
+	margin-top: 25px;
+}
+
+section .visi-misi .misi h4{
+	clear: both;
+	float: left;
+	width: 20%;
+	height: 100px;
+}
+
+section .visi-misi .visi p, section .visi-misi .misi p{
+	color: #7e7e7e;
+	font-family: 'Proxima';
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .testimoni{
+	clear: both;
+	background: url('../img/pict/bg3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 700px;
+}
+
+section .testimoni .testimoni-title h3{
+	font-family: 'obold';
+	text-shadow: 1px 1px #3fbcef;
+	text-align: center;
+	font-size: 28px;
+	color: #191b1c;
+}
+
+section .testimoni .testimoni-title{
+	margin-top: 75px;
+}
+
+section .testimoni .ket p{
+	font-family: 'Open';
+	font-size: 16px;
+	color: #7e8288;
+	text-align: center;
+	line-height: 27px;
+}
+
+section .testimoni .ket{
+	margin-top: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .testimoni #myCarousel{
+	height: auto;
+	margin: 50px 0;
+}
+
+section .testimoni img{
+	margin: 0 auto;
+	width: 100px;
+	border-radius: 100%;
+}
+
+section .testimoni h4{
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Roboto';
+	color: #565e75;
+	font-weight: bold;
+}
+
+section .testimoni .biodata h4{
+	position: relative;
+	top: 7px;
+}
+
+section .testimoni .biodata p{
+	margin-bottom: 20px;
+}
+
+section .testimoni .from{
+	color: #43b3ae;
+	font-size: 12px;
+	font-family: 'Roboto';
+	text-align: center;
+}
+
+section .testimoni .biodata{
+	border-bottom: solid 3px #00ccff;
+	width: 8%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+section .testimoni .testimoni-content{
+	color: #b1b1b1;
+	font-family: 'Proxima';
+	font-size: 15px;
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .testimoni .left{
+	float: left;
+}
+
+section .testimoni .right{
+	float: right;
+}
+
+section .testimoni .glyphicon{
+	font-size: 30px;
+	color: #04b0f7;
+	border: solid 3px #04b0f7;
+	border-radius: 100%;
+	padding: 7px;
+	position: absolute;
+	top: 45%;
+}
+
+section .brosur{
+	background: url('../img/pict/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 350px;
+	clear: both;
+	margin-top: 50px;
+}
+
+section .brosur h1{
+	font-family: 'Intro';
+	font-size: 48px;
+	color: #FFF;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+section .brosur .butn{
+	background: linear-gradient(#00b5ff, #3fbcef);
+	text-align: center;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #FFF;
+	font-family: 'Roboto';
+	font-size: 18px;
+}
+
+section .brosur .butn:hover{
+	background: linear-gradient(#1ABCFF, #57C4F1);
+	transition: all .3s ease;
+}
+
+section .brosur .download{
+	text-align: center;
+}
+
+section .event .event-title{
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 85px;
+}
+
+section .event .event-title h3{
+	font-family: 'obold';
+	text-shadow: 1px 1px #3fbcef;
+	font-size: 28px;
+	color: #191b1c;
+}
+
+section .event .event-title p{
+	font-family: 'Open';
+	font-size: 16px;
+	color: #7e8288;
+	line-height: 25px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+section .event .head h1{
+	font-family: 'Robotom';
+	font-size: 48px;
+	color: #363636;
+	float: left;
+}
+
+section .event .head p{
+	font-family: 'Robotom';
+	font-size: 14px;
+	color: #b7b7b7;
+	position: relative;
+	top: 47px;
+	left: 50px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .event .title-event h3{
+	color: #363636;
+	font-family: 'Robotom';
+	font-size: 20px;
+}
+
+section .event .event-content p, section .event .readmore, section .event .moreread, section .event .rm{
+	color: #7e7e7e;
+	font-family: 'Proxima';
+	font-size: 14px;
+	margin-bottom: 30px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+section .event .event-content h3{
+	color: #363636;
+	font-family: 'Robotom';
+	font-size: 16px;
+}
+
+section .event .pict{
+	margin-top: 25px;
+}
+
+section .event .pict img{
+	width: 150px;
+}
+
+section .event .event-content h1{
+	color: #363636;
+	font-family: 'Robotom';
+	font-size: 30px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+section .event .event-content .bton{
+	border: solid 2px #3fbcef;
+	background: #FFF;
+	color: #3fbcef;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 7px 37px;
+	font-family: 'Roboto';
+	font-size: 18px;
+}
+
+section .event .event-content .bttn{
+	text-align: center;
+}
+
+section .event .event-content .readmore-toggle, section .event .event-content .moreread-toggle, section .event .event-content .rm-toggle{
+	text-decoration: none;
+	background: #3fbcef;
+	border: solid 1px #3fbcef;
+	font-family: 'Roboto';
+	font-size: 18px;
+	padding: 8px 30px;
+	color: #FFF;
+}
+
+section .event .col-md-10{
+	margin-bottom: 80px;
+}
+.col-sm-12{
+	padding: 0 !important;
+}
+section .event .head span, section .event .head a{
+	color: #3fbcef;
+	text-decoration: none;
+}
+
+section .event .title-event{
+	clear: both;
+}
+
+.img{
+	margin-right: 100px;
+}
+
+section .event .halaman{
+	float: right;
+}
+
+section .event .halaman ul{
+	margin: 0;
+	padding: 0;
+}
+
+section .event .halaman ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 8px 50px 8px;
+}
+
+section .event .halaman ul li a{
+	text-decoration: none;
+	font-family: 'Roboto';
+	color: #abb5cd;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section .event .halaman ul li .active{
+	color: #3fbcef;
+}
+
+section .contact{
+	clear: both;
+	background: url('../img/pict/bg4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+}
+
+section .contact iframe{
+	padding-right: 25px;
+}
+
+section .contact .contact-title{
+	text-align: center;
+	margin: 65px 0 110px 0;
+}
+
+section .contact .contact-title h3{
+	font-family: 'obold';
+	text-shadow: 1px 1px #3fbcef;
+	font-size: 28px;
+	color: #191b1c;
+}
+
+section .contact .kontak-content ul{
+	margin: 0;
+	padding: 0;
+}
+
+section .contact .kontak-content ul li{
+	list-style: none;
+}
+
+section .contact .kontak-content i{
+	float: left;
+	color: #7e7e7e;
+}
+
+section .contact .kontak-content .col-md-10{
+	padding: 0;
+	position: relative;
+	bottom: 5px;
+	left: 7px;
+}
+
+section .contact .kontak-title{
+	margin-bottom: 40px;
+}
+
+section .contact .kontak-title h3{
+	font-family: 'Proxima';
+	color: #3fbcef;
+	font-size: 20px;
+	margin: 0;
+}
+
+section .contact .kontak-content a, section .contact .kontak-content span{
+	color: #7e7e7e;
+	font-family: 'Proxima';
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+section .contact .kontak-content p{
+	margin-bottom: 15px;
+}
+
+footer{
+	clear: both;
+	background-color: #00ccff;
+	width: 100%;
+	height: 60px;
+}
+
+footer .left{
+	float: left;
+	margin-top: 25px;
+}
+
+footer .left img{
+	width: 180px;
+}
+
+footer .right{
+	float: right;
+	margin-top: 20px; 
+}
+
+footer .right span{
+	font-family: 'Proxima';
+	color: #FFF;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+footer .right a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+	font-family: 'Proxima';
+}
+
+@media screen and (max-width: 768px){
+	header{
+    	background-image: url('../img/pict/responsive.jpg');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	width: 100%;
+    	height: 800px;
+	}
+
+	section .visi-misi{
+		background: url('../img/pict/responsivevisi.jpg');
+		background-position: center;
+	}
+
+	.img{
+		margin-right: 0;
+	}
+	.button-c:hover{
+	background:#fff;
+	opacity: 0.5 ;
+	transition: all .3s ease;
+	color: #39aed8;
+	border: solid 1px #39aed8;
+	text-decoration: none;
+	}
+	section .visi-misi .visi-title h3{
+		font-size: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 100px 0px;
+	}
+	.misi{
+		padding-top: 50px;
+	}
+	.misi h3{
+		width: 20%;
+		float: left;
+	}
+	.misi p{
+		padding-top: 10px;
+		padding-left: 5px;
+		width: 80%;
+		float: left;
+	}
+	.visi p{
+		padding-top: 10px;
+	}
+	.kontak-content{
+		margin-left: 5px;
+	}
+	section .brosur .butn{
+		cursor: pointer; 
+	}
+	footer{
+		height: 100px;
+	}
+
+	.left{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.right{
+		clear: both;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		bottom: 10px;
+	}
+	.logo-uu img{
+		width: 60px;
+		margin: 0 auto;
+		padding: 15px 0px;
+	}
+	.logo-u{
+		width: 80%;
+		margin: 0 auto;
+		z-index: 99;
+		margin-top: -150px;
+		padding: 30px 0px;
+	}
+	.icon{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logo-uu .bagi-5{
+		width: 33.33%;
+		float: left;
+		margin: 0 auto;
+	}
+	.logo-uu .bagi-6{
+		width: 50%;
+		float: left;
+		margin: 0 auto;
+	}
+	.logo-uu .ipg{
+		float: left;
+	}
+	.testimoni-title h3 {
+		font-size: 20px !important;
+	}
+	.ket p {
+		font-size: 15px !important;
+	}
+	section .info .row .content-info{
+		padding:0;
+	}
+	section .info{
+		padding-top: 50px;
+	}
+	section .info .title h3{
+		font-size: 20px;
+	}
+	section .info .ket p{
+		font-size: 14px;
+	}
+	section .brosur{
+		height: 200px;
+	}
+	.download h1 {
+		margin-top: 80px !important;
+		margin-bottom: 25px !important;
+		width: 100% !important;
+		font-size: 22px !important;
+	}
+	.event-title h3{
+		font-size: 20px !important;
+	}
+	section .brosur .butn{
+		font-size: 15px !important;
+	}
+	.contact-title h3 {
+		font-size: 25px !important;
+	}
+	section .contact .contact-title{
+		margin-bottom: 60px;
+	}
+	section .testimoni .biodata{
+		width: 50%;
+	}
+	section .testimoni img {
+		margin: 0px 35px;
+	}
+	section .testimoni .testimoni-content{
+		width: 100%;
+		padding-bottom: 100px;
+	}
+	section .testimoni .glyphicon{
+		top: 86.5%;
+	}
+
+	section .testimoni .glyphicon-chevron-left{
+		position: relative;
+		right: 30px;
+		bottom: 50px;
+	}
+	section .testimoni .glyphicon-chevron-right{
+		position: absolute;
+		top: -89px;
+		left: 190px;
+	}
+	section .event .head p{
+		float: left;
+		padding-bottom: 10px;
+		top:0;
+		margin: 0;
+		left: 0;
+	}
+	section .event .head h1{
+		float: none;
+	}
+	footer {
+		margin-top: 250px;
+	}
+}
